@@ -1,0 +1,294 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'home/css/styles.css' %}" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-paw"></i> shop </a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#shop">shop</a>
+        <a href="#adoption">adoption</a>
+        <a href="#appointment">appointment</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>log in as an admin</h3>
+        <input
+          type="email"
+          name=""
+          placeholder="enter your email"
+          id=""
+          class="box"
+        />
+        <input
+          type="password"
+          name=""
+          placeholder="enter your password"
+          id=""
+          class="box"
+        />
+        <div class="remember">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <div class="links">
+          <a href="#">forget password</a>
+          <a href="#">sign up</a>
+        </div>
+      </form>
+    </header>
+
+
+
+
+
+
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3><span>hi</span> welcome to our pet shop</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    <img src="{% static 'home/images/bottom_wave.png' %}" class="wave" alt="">
+
+    </section>
+
+    <section class="about" id="about">
+
+      <div class="image">
+        <img src="{% static 'home/images/about_img.jpeg' %}"  alt="">
+      </div>
+
+
+      <div class="content">
+        <h3>Premium <span>Pet Food</span>Manufacturer</h3>
+        <p>Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. 
+        Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+
+
+
+    <div class="dog-food">   
+    <div class="image">
+      <img src="{% static 'home/images/dog-food.jpeg' %}"  alt="">
+    </div>
+
+    <div class="content">
+      <h3><span>Air Dried</span>  Dog Food </h3>
+      <p>Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. 
+        Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. </p>
+        <div class="amount">₱400.00 - ₱800.00</div>
+        <a href="#" >      <img src="{% static 'home/images/shop_now_dog.jpeg' %}"  alt="">
+        </a>
+    </div>
+    </div>
+
+
+
+
+
+     
+    <div class="cat-food">  
+      <div class="content">
+        <h3><span>Air Dried</span>  Cat Food </h3>
+        <p>Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. 
+          Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. Ganda ni lexa. </p>
+          <div class="amount">₱400.00 - ₱800.00</div>
+
+          <a href="#" >      <img src="{% static 'home/images/shop_now_cat.jpeg' %}"  alt="">
+          </a>
+      </div>
+
+      <div class="image">
+        <img src="{% static 'home/images/cat_food.jpeg' %}"  alt="">
+      </div>
+
+      </div>
+    
+
+      <section class="shop" id="shop">
+
+        <h1 class="heading"> our <span> products </span> </h1>
+  
+        <div class="box-container">
+        
+          <div class="box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="{% static 'home/images/product_01.png' %}"  alt="">
+            </div>
+
+            <div class="content">
+              <h3>Air-Dried Food</h3>
+              <div class="amount">₱400.00 - ₱800.00</div>
+            </div>
+          </div>
+
+
+          <div class="box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="{% static 'home/images/product_02.jpeg' %}"  alt="">
+            </div>
+
+            <div class="content">
+              <h3>Air-Dried Food</h3>
+              <div class="amount">₱400.00 - ₱800.00</div>
+            </div>
+          </div>
+
+
+
+          <div class="box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="{% static 'home/images/product_03.jpeg' %}"  alt="">
+            </div>
+
+            <div class="content">
+              <h3>Air-Dried Food</h3>
+              <div class="amount">₱400.00 - ₱800.00</div>
+            </div>
+          </div>
+
+
+          <div class="box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="{% static 'home/images/product_04.jpeg' %}"  alt="">
+            </div>
+
+            <div class="content">
+              <h3>Air-Dried Food</h3>
+              <div class="amount">₱400.00 - ₱800.00</div>
+            </div>
+          </div>
+
+
+          <div class="box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="{% static 'home/images/product_05.jpeg' %}"  alt="">
+            </div>
+
+            <div class="content">
+              <h3>Air-Dried Food</h3>
+              <div class="amount">₱400.00 - ₱800.00</div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="{% static 'home/images/product_06.jpeg' %}"  alt="">
+            </div>
+
+            <div class="content">
+              <h3>Air-Dried Food</h3>
+              <div class="amount">₱400.00 - ₱800.00</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- <section class="services" id="services">
+
+        <h1 class="heading"> Our <span> Services</span></h1>
+        <div class="box-container">
+
+          <div class="box">
+            <i class="fas fa-dog"></i>
+            <h3>Dog Boarding</h3>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-cat"></i>
+            <h3>Cat Boarding</h3>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-bath"></i>
+            <h3>Spa & Grooming</h3>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+        </div>
+      </section> -->
+
+
+      <section class="contact" id="contact">
+        <div class="image">
+          <img src="{% static 'home/images/contact_img.png' %}"  alt="">
+        </div>
+
+        <form action="">
+        <h3>Contact Us</h3> 
+        <input type="text" placeholder="your name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="number" placeholder="your number" class="box">
+          <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message" class="btn">
+        </form>
+      </section>
+
+
+
+
+
+    <script src="{% static 'home/scripts/script.js' %}"></script>
+  </body>
+</html>
